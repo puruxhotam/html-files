@@ -1,0 +1,68 @@
+body{
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(to right bottom, rgb(0, 0, 0),rgb(115, 115, 115),black);
+}
+a{
+    color: rgb(31, 28, 22);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    font-family: serif;
+    word-spacing: 5px;
+    transition: linear 0.2s;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+form{
+    width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 4px black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+option{
+    justify-content: center;
+    align-items: center;
+}
+#ticket{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    background-color:grey;
+    color: white;
+    cursor: pointer;
+}
+input{
+    cursor: text;
+    box-shadow: 0 0 4px black;
+}
+button:hover{
+    background-color: rgb(172, 172, 172);
+}
+h3{
+    color: white;
+}
