@@ -1,74 +1,85 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body{
+    display: flex;
+    /* width: 1280px; */
+    height: 720px;
+    background-image: url(tour2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background:linear-gradient(to right bottom,black,rgb(192, 190, 190),black); */
+    justify-content: center;
+    align-items: center;
+    visibility: inherit ;
+}
+form{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,0.34);
+    width: 480px;
+    height: 400px;
+    box-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(65, 63, 63);
+   
+}
+.btn{
+    color: white;
+    background-color: rgba(128, 128, 128,0.45);
+    height: 40px;
+    width: 395px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0,0.22);
+}
+input{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 20px;
+    border: none;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+}
+.page{
+    padding: 10px;
+    align-content: center;
+}
+label{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.su{
+    padding: 10px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    color: grey;
+    background-color: white;
+    border : grey solid 1px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
 }
-body{
-    background-color: #fdbf00;
-}
-.card{
-    width: 640px;
-    height: 400px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-perspective: 1200px;
-    perspective: 1200px;
-    transition: 1s;
-}
-.card:hover{
-    transform: rotate(-5deg);
-}
-.card:hover .outside{
-    transform: rotateY(-130deg);
-}
-.outside,
-.inside{
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    left: 50.1%;
-}
-.inside{
-    background: linear-gradient(to right, #e7e7e7, #fff 30%);
-    line-height: 3;
-    padding: 0 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    left: 50%;
-}
-.outside{
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    z-index: 1;
-    transform-origin: left;
-    transition: 2s;
-    cursor: pointer;
-}
-.front,
-.back{
-    height: 100%;
+/* img{
     width: 100%;
+    height: 720px;
     position: absolute;
-    -webkit-backface-visibility: hidden;
-    transform: rotateX(0deg);
-}
-.front{
-    background-color: #fff;
-}
-.back{
-    transform: rotateY(180deg);
-    background: linear-gradient(to left, #e7e7e7, #fff 30%);
-}
-.cake{
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-} 
+    z-index: -4;
+    padding: 20px;
+    margin: 0;
+} */
