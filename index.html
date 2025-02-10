@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>web page</title>
+        <title>home page</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action=""></form>
+        <h3>My website</h3>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">BOOKINGS</a>
+            <a href="#">CONTACT</a>
+            <a href="#">ABOUT</a>
+        </nav>
+        <form method="get">
+            <select name="opt" id="opt">
+                <option value="Movie">Movie</option>
+                <option value="Train">Train</option>
+                <option value="Plane">Plane</option>
+            </select>
+            <input type="date" name="ticket" id="ticket">
+            <button type="submit">Confirm</button>
+        </form>
     </body>
 </html>
