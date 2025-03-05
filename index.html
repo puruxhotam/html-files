@@ -5,21 +5,22 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h3>My website</h3>
+        <div class="upper">
+        <div class="searchbar">
+            <input type="search" class="srch" placeholder="Find movies">
+            <button class="srchbtn">Search</button>
+        </div>
         <nav>
             <a href="#">HOME</a>
             <a href="#">BOOKINGS</a>
             <a href="#">CONTACT</a>
             <a href="#">ABOUT</a>
         </nav>
+    </div>
         <form method="get">
-            <select name="opt" id="opt">
-                <option value="Movie">Movie</option>
-                <option value="Train">Train</option>
-                <option value="Plane">Plane</option>
-            </select>
-            <input type="date" name="ticket" id="ticket">
-            <button type="submit">Confirm</button>
+           <input type="number" min="1" max="10" class="not" placeholder="Enter number of tickets" required>
+            <input type="date" name="ticket" id="ticket" required>
+            <button type="submit" class="btn">Confirm</button>
         </form>
     </body>
 </html>
