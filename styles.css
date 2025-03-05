@@ -5,10 +5,17 @@ body{
     background-size: cover;
     background-position: center;
 }
+.upper{
+    margin: 0px;
+    padding: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 a{
-    margin: 10px;
     height: 30px;
-    color:transparent;
+    color:white;
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
@@ -17,13 +24,12 @@ a{
     transition: linear 0.2s;
 }
 a:hover{
-    color: white;
+    height: 20px;
 }
 form{
     width: 480px;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 20px rgb(225, 0, 255);
@@ -38,13 +44,10 @@ select{
     box-shadow: 0 0 4px black;
 }
 nav{
-    margin-top: 0;
-    height: 30px;
-    margin: 0;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 option{
     justify-content: center;
@@ -55,7 +58,7 @@ option{
     height: 40px;
     border-radius: 10px;
 }
-button{
+.btn{
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -68,7 +71,7 @@ input{
     cursor: text;
     box-shadow: 0 0 4px black;
 }
-button:hover{
+.btn:hover{
     background-color: rgb(249, 104, 210);
 }
 h3{
@@ -89,4 +92,33 @@ form{
     padding: 20px;
     margin: auto;
     margin-top: 50px;
+}
+.not{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+.searchbar{
+    display: flex;
+}
+.srch{
+    width: 200px;
+    border: solid 1px white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.srchbtn{
+    color: white;
+    background: linear-gradient(to left,pink,purple);
+    border: white solid 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+.srchbtn:hover{
+   height: 27px;
+   width: 62px;
 }
