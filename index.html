@@ -6,6 +6,9 @@
     </head>
     <body>
         <div class="upper">
+            <span class="head">
+                <h2>My Website</h2>
+            </span>
         <div class="searchbar">
             <input type="search" class="srch" placeholder="Find movies">
             <button class="srchbtn">Search</button>
@@ -17,8 +20,17 @@
             <a href="#">ABOUT</a>
         </nav>
     </div>
+    <div class="welcome">
+        <section>
+            <h1>Get some movie tickets</h1>
+            <p>Buy movie tickets in advance, spend some time with your family and watch some movies</p>
+        </section>
+    </div>
         <form method="get">
-           <input type="number" min="1" max="10" class="not" placeholder="Enter number of tickets" required>
+            <span>
+                <label for="movies">Get your tickets from here</label>
+            </span>
+           <input type="number" id="ticketcount" min="1" max="10" class="not" placeholder="Enter number of tickets" name="movies" required>
             <input type="date" name="ticket" id="ticket" required>
             <button type="submit" class="btn">Confirm</button>
         </form>
