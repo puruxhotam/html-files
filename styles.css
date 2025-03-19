@@ -1,17 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    height: 720px;
-    background: url(neon.jpg);
+    background: linear-gradient(45deg, black,grey);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
 }
 .upper{
     margin: 0px;
     padding: 5px;
     height: 45px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 a{
     height: 30px;
@@ -32,26 +38,15 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 20px rgb(225, 0, 255);
-}
-select{
-    margin: 10px;
-    width: 400px;
-    height: 40px;
-    border-radius: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
-    box-shadow: 0 0 4px black;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
-option{
-    justify-content: center;
-    align-items: center;
+#ticketcount{
+    margin-top: 50px;
 }
 #ticket{
     width: 400px;
@@ -79,19 +74,19 @@ h3{
     color: rgb(250, 249, 249);
 }
 form{
-    background: transparent;
     border: solid 1px grey;
-    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 400px;
+    width: 500px;
     height: 400px;
     padding: 20px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 0px;
 }
 .not{
     width: 400px;
@@ -102,10 +97,20 @@ form{
     display: flex;
 }
 .srch{
-    width: 200px;
+    background: transparent;
+    color: white;
+    letter-spacing: 1px;
+    width: 800px;
+    height: 30px;
+    box-sizing: border-box;
     border: solid 1px white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    padding: 5px;
+    transition: ease-out 0.1s;
+}
+.srch:active{
+    background-color: grey;
 }
 .srchbtn{
     color: white;
@@ -114,11 +119,50 @@ form{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 60px;
-    height: 25px;
     cursor: pointer;
-    
 }
 .srchbtn:hover{
-   height: 27px;
+    box-shadow: 3px 2px 5px black;
    width: 62px;
+}
+.head{
+    display: inline;
+}
+h2{
+    font-size: 15px;
+    user-select: none;
+    color: rgb(252, 9, 203);
+    text-shadow: 0px 1px 10px black;
+    margin-right: 10px;
+}
+label{
+    color: rgb(252, 9, 203);
+    text-shadow: 0px 2px 5px black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 40px;
+}
+section h1{
+    color: rgb(252, 9, 203);
+    font-family: Cambria;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+section p{
+    color: white;
+    word-spacing: 5px;
+    font-family: cambria;
+    font-size: 15px;
 }
