@@ -9,7 +9,7 @@
     padding: 10px;
 }
 .upperlabel{
-    background-color: orange;
+    background-color: rgb(252, 9, 203);
     height: 50px;
     width: 100%;
     box-shadow: 1px 0px 5px black;
@@ -28,21 +28,22 @@ form{
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    height: 300px;
+    height: 400px;
+    width: 400px;
     box-shadow: 0px 0px 5px black;
 }
 input{
-    color: white;
-    background-color: grey;
+    color: rgb(252, 9, 203);
+    background-color: rgb(211, 211, 211);
     border: none;
     padding: 5px;
     box-sizing: border-box;
     width: 300px;
-    height: 30px;
+    height: 40px;
     margin: 5px;
 }
 input::placeholder{
-    color: rgb(211, 209, 209);
+    color: rgb(83, 83, 83);
     font-size: 12px;
     word-spacing: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,18 +52,18 @@ input::placeholder{
 button{
     box-sizing: border-box;
     width: 300px;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     border: none;
     margin: 5px;
-    background-color: orange;
+    background-color: rgb(252, 9, 203);
     color: white;
     cursor: pointer;
     transition: ease 0.15s;
 }
 button:hover{
-    background-color: rgb(250, 215, 151);
-    color: rgb(129, 127, 127);
+    background-color: rgba(252, 9, 203, 0.673);
+    color: rgb(255, 255, 255);
 }
 .upperin{
     border: none;
@@ -77,17 +78,19 @@ button:hover{
 .newaccount{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: orange;
+    color: rgb(252, 9, 203);
 }
 .back{
-    
     width: 150px;
     height: 0%;
     padding: 10px;
 }
 a{
-
     margin: 10px;
     text-decoration: none;
     color: white;
+    transition: linear 0.1s;
+}
+a:hover{
+    font-size: 15px;
 }
