@@ -1,35 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     display: flex;
-    /* width: 1280px; */
-    height: 720px;
-    background-image: url(tour2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* background:linear-gradient(to right bottom,black,rgb(192, 190, 190),black); */
     justify-content: center;
     align-items: center;
-    visibility: inherit ;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
 }
 form{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255,0.34);
-    width: 480px;
-    height: 400px;
+    width: 450px;
+    height: 100%;
     box-shadow: 0px 0px 20px black;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgb(65, 63, 63);
    
 }
 .btn{
     color: white;
-    background-color: rgba(128, 128, 128,0.45);
+    background-color:rgb(252, 9, 203);
     height: 40px;
-    width: 395px;
+    width: 330px;
     align-self: center;
     border: none;
     border-radius: 10px;
@@ -52,7 +51,6 @@ input{
     align-content: center;
 }
 label{
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
@@ -62,7 +60,7 @@ label{
 }
 a{
     text-decoration: none;
-    color: white;
+    color:rgb(252, 9, 203);
 }
 button:hover{
     color: grey;
@@ -75,11 +73,39 @@ h2{
     align-items: center;
     font-family: sans-serif;
 }
-/* img{
-    width: 100%;
-    height: 720px;
-    position: absolute;
-    z-index: -4;
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin: 20px;
+    width: 80%;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 120px;
+    margin-right: 5px;
+}
+.all{
+    display: flex;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     padding: 20px;
+    width: 70%;
+    height: 400px;
+}
+.register{
     margin: 0;
-} */
+    display: flex;
+    width: 450px;
+    padding: 10px;
+    float: left;
+    width: 80%;
+}
