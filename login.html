@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>web page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="index.html">
+        <div class="container">
+        <form action="index.html" >
             <h2 class="page">Login</h2>
-            <label for="username">Username</label>
+            <div class="all">
+        <div class="box">
             <input type="text" name="username" id="username" placeholder="Enter your username" required><br>
-            <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Enter your password" required><br>
             <button type="submit" class="btn">LOGIN</button>
-            <div>
-                <label for="sign up" class="su">Don't have account? <a href="#">Sign up</a> here</label>
+        </div>
+    </div>
+            <div class="register">
+                <label class="signup" for="sign up" class="su">Don't have account? <a href="new.html">Sign up</a> here</label>
             </div>
         </form>
+    </div>
         <!-- <img src="tour.jpg" alt="tour"> -->
     </body>
 </html>
