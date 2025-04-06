@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>home page</title>
+        <title>BookMovs</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="upper">
             <span class="head">
-                <h2>My Website</h2>
+                <a href="/index.html"></a>BookMovs</a>
             </span>
         <div class="searchbar">
             <input type="search" class="srch" placeholder="Find movies">
             <button class="srchbtn">Search</button>
         </div>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">BOOKINGS</a>
-            <a href="#">CONTACT</a>
-            <a href="#">ABOUT</a>
+            <a href="/index.html">HOME</a>
+            <a href="#bookings">BOOKINGS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#ABOUT">ABOUT</a>
         </nav>
     </div>
     <div class="welcome">
@@ -26,7 +28,7 @@
             <p>Buy movie tickets in advance, spend some time with your family and watch some movies</p>
         </section>
     </div>
-        <form method="get">
+        <form method="get" id="bookings">
             <span>
                 <label for="movies">Get your tickets from here</label>
             </span>
@@ -34,5 +36,47 @@
             <input type="date" name="ticket" id="ticket" required>
             <button type="submit" class="btn">Confirm</button>
         </form>
+        <p class="contact-para">Contact us using these links or write us your suggestions</p>
+        <section class="contact" id="contact">
+            <div class="call">
+                <p>
+                    <i class="material-icons" >&#xe551;</i> : +91 1234567890 <br>
+                    <i class="material-icons">&#xe55f;</i> : sector 32, chandigarh <br>
+                </p>
+                    <div class="social-icons">
+                        <a href="#"  title="facebook"> 
+                          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="twitter"> 
+                          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="instagram">  
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="linkedin">
+                          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div> 
+                </div>
+                    <div class="feedback">
+                        <label for="email">Write your query</label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <input type="text" name="Name" placeholder="Name">
+                        <textarea name="message" placeholder="Write your message here..." rows="5" maxlength="300"></textarea>
+                        <button>Submit</button>
+                    </div>               
+        </section>
+        <p class="about_para">About the site</p>
+        <section class="about_site" id="ABOUT">
+            <h3>BookMovs</h3> <br>
+            <p>This is for booking your movie tickets in advance, why standing in ticket line when you can book your show just in one click.
+            </p>
+            <h2>Created By</h2>
+            <ul>
+                <li>Purushotam</li>
+                <li>Radhika</li>
+                <li>Priyanshu</li>
+            </ul>
+        </section>
     </body>
 </html>
