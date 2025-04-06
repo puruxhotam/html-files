@@ -1,17 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background: linear-gradient(45deg, black,grey);
+body {
+    background: linear-gradient(45deg, black, grey);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
-    width: 100%;
     padding: 5px;
 }
-.upper{
+.upper {
     margin: 0px;
     padding: 5px;
     height: 45px;
@@ -19,9 +17,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-a{
+a {
     height: 30px;
-    color:white;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
@@ -29,52 +27,49 @@ a{
     word-spacing: 5px;
     transition: linear 0.2s;
 }
-a:hover{
+a:hover {
     height: 20px;
 }
-form{
-    width: 480px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-}
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#ticketcount{
+#ticketcount {
     margin-top: 50px;
 }
-#ticket{
+#ticket {
     width: 400px;
     height: 40px;
     border-radius: 10px;
 }
-.btn{
+.btn {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     width: 50%;
-    background-color:rgb(252, 9, 203);
+    background-color: rgb(252, 9, 203);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-input{
+input {
     cursor: text;
     box-shadow: 0 0 4px black;
 }
-.btn:hover{
+.btn:hover {
     background-color: rgb(249, 104, 210);
 }
-h3{
+h3 {
     justify-content: flex-start;
     color: rgb(250, 249, 249);
 }
-form{
-    border: solid 1px grey;
+form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,21 +77,20 @@ form{
     border-radius: 20px;
     width: 500px;
     height: 400px;
-    padding: 20px;
-    margin: auto;
+    padding: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 0px;
 }
-.not{
+.not {
     width: 400px;
     height: 40px;
     border-radius: 10px;
 }
-.searchbar{
+.searchbar {
     display: flex;
 }
-.srch{
+.srch {
     background: transparent;
     color: white;
     letter-spacing: 1px;
@@ -109,44 +103,43 @@ form{
     padding: 5px;
     transition: ease-out 0.1s;
 }
-.srch:active{
+.srch:active {
     background-color: grey;
 }
-.srchbtn{
+.srchbtn {
     color: white;
-    background: linear-gradient(to left,pink,purple);
+    background: linear-gradient(to left, pink, purple);
     border: white solid 1px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 60px;
     cursor: pointer;
 }
-.srchbtn:hover{
+.srchbtn:hover {
     box-shadow: 3px 2px 5px black;
-   width: 62px;
 }
-.head{
+.head {
     display: inline;
 }
-h2{
+.head  {
     font-size: 15px;
     user-select: none;
     color: rgb(252, 9, 203);
     text-shadow: 0px 1px 10px black;
     margin-right: 10px;
 }
-label{
+label {
     color: rgb(252, 9, 203);
     text-shadow: 0px 2px 5px black;
     font-family: sans-serif;
     font-weight: bold;
 }
-.welcome{
+.welcome {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,15 +147,213 @@ section{
     width: 500px;
     padding: 40px;
 }
-section h1{
+section h1 {
     color: rgb(252, 9, 203);
     font-family: Cambria;
     font-size: 40px;
     margin-bottom: 20px;
 }
-section p{
+section p {
     color: white;
     word-spacing: 5px;
     font-family: cambria;
     font-size: 15px;
+}
+.social-icons {
+    display: block;
+    padding: 30px;
+    background: transparent;
+    text-align: center;
+}
+.social-icons a {
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    margin: 0px;
+    text-decoration: none;
+}
+.social-icons a i {
+    line-height: 30px;
+    font-size: 30px;
+}
+.social-icons a:hover i {
+    box-shadow: 0px 0px 20px #000000;
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+.call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact {
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 0px 5px;
+    border-radius: 20px;
+}
+.feedback {
+    display: grid;
+    width: 100%;
+}
+.feedback input {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px;
+    border: none;
+    background: rgb(66, 65, 65);
+}
+.feedback textarea {
+    border-radius: 30px;
+    padding: 10px;
+    background: rgb(66, 65, 65);
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0px 0px 2px;
+}
+.feedback label {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.feedback button {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px;
+    border: none;
+    background: rgb(252, 9, 203);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.contact-para {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.about_site{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 400px;
+        padding: 50px;
+        box-shadow: 0px 0px 5px;
+        border-radius: 20px;
+}
+.about_site h3{
+    font-size: 30px;
+    color: rgb(252, 9, 203);
+    font-family: 'Trebuchet MS';
+}
+.about_site p{
+    font-family: 'Trebuchet MS';
+    margin: 10px;
+}
+.about_site h2, ul{
+    color: rgb(136, 135, 135);
+    margin: 10px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS';
+}
+.about_para{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+@media (max-width: 1200px) {
+    body {
+        padding: 10px;
+    }
+    form {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+    .searchbar {
+        flex-direction: column;
+    }
+    .srch {
+        width: 100%;
+    }
+    .btn {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .upper {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+    .searchbar {
+        flex-direction: column;
+        width: 100%;
+    }
+    .srch {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .srchbtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+    .social-icons a {
+        font-size: 25px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about div {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 20px;
+    }
+    .srch {
+        width: 100%;
+        height: 35px;
+    }
+    .btn {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+    .feedback input, .feedback textarea {
+        width: 100%;
+    }
+    .contact-para {
+        font-size: 12px;
+    }
+    .social-icons a {
+        font-size: 20px;
+    }
 }
