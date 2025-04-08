@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0px;
     padding: 5px;
 }
 .upper {
@@ -15,14 +16,14 @@ body {
     height: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-a {
+nav a {
     height: 30px;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     font-family: serif;
     word-spacing: 5px;
     transition: linear 0.2s;
@@ -34,16 +35,22 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-#ticketcount {
-    margin-top: 50px;
-}
-#ticket {
+#ticketcount, #ticket{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 5px 5px;
+    padding: 1%;
     width: 400px;
     height: 40px;
     border-radius: 10px;
 }
 .btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Calibri;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -271,6 +278,9 @@ section p {
     text-align: center;
     margin: 20px;
 }
+.contact a{
+    margin: 10px;
+}
 @media (max-width: 1200px) {
     body {
         padding: 10px;
@@ -292,6 +302,10 @@ section p {
 }
 
 @media (max-width: 768px) {
+    body{
+        background-position: 100%;
+        
+    }
     .upper {
         height: auto;
         flex-direction: column;
@@ -309,11 +323,16 @@ section p {
     }
     .srch {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
     }
     .srchbtn {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
         width: 100%;
-        margin-top: 10px;
+        height: 30px;
+        margin-top: 0px;
     }
     section {
         width: 90%;
@@ -329,6 +348,19 @@ section p {
         width: 100%;
         height: auto;
         margin: 20px 0;
+    }
+    form{
+        height: 300px;
+        padding: 40px;
+    }
+    .btn{
+        width: 80%;
+    }
+    #ticket{
+        width: 80%;
+    }
+    #ticketcount{
+        width: 80%;
     }
 }
 
@@ -355,5 +387,11 @@ section p {
     }
     .social-icons a {
         font-size: 20px;
+    }
+    .btn{
+        width: 80%;
+    }
+    .about_site{
+        width: 80%;
     }
 }
