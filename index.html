@@ -5,6 +5,46 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // Welcome alert on page load
+            window.onload = function() {
+                alert("Welcome to BookMovs! Book your tickets now.");
+            };
+        
+            // Handle ticket booking form submission
+            const bookingForm = document.getElementById('bookings');
+            bookingForm.addEventListener('submit', function(event) {
+                const ticketCount = document.getElementById('ticketcount').value;
+                const ticketDate = document.getElementById('ticket').value;
+        
+                if (!ticketCount || !ticketDate) {
+                    alert("Please fill out all booking fields.");
+                    event.preventDefault(); // Prevent form submission
+                } else {
+                    alert(`🎟️ You have successfully booked ${ticketCount} ticket(s) for ${ticketDate}!`);
+                }
+            });
+        
+            // Handle feedback submission (basic check)
+            const feedbackButton = document.querySelector('.feedback button');
+            feedbackButton.addEventListener('click', function(event) {
+                const email = document.querySelector('input[name="email"]').value;
+                const name = document.querySelector('input[name="Name"]').value;
+                const message = document.querySelector('textarea[name="message"]').value;
+        
+                if (!email || !name || !message) {
+                    alert("Please complete all feedback fields.");
+                } else {
+                    alert("✅ Thanks for your feedback!");
+                }
+            });
+        
+            // Show ticket count change in console
+            document.getElementById('ticketcount').addEventListener('input', function () {
+                console.log(`Ticket count selected: ${this.value}`);
+            });
+        </script>
+        
     </head>
     <body>
         <div class="upper">
@@ -16,7 +56,7 @@
             <button class="srchbtn">Search</button>
         </div>
         <nav>
-            <a href="/index.html">HOME</a>
+            <a href="/index2.html">HOME</a>
             <a href="#bookings">BOOKINGS</a>
             <a href="#contact">CONTACT</a>
             <a href="#ABOUT">ABOUT</a>
